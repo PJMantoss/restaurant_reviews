@@ -10,7 +10,7 @@ export default class RestaurantsDAO {
         if(restaurants){
             return
         }try{
-            restaarants = await conn.db(process.env.RESTREVIEWS_NS).collection("restaurants");
+            restaurants = await conn.db(process.env.RESTREVIEWS_NS).collection("restaurants");
         } catch(e){
             console.error(`Unable to establish a collection handle in restaurantsDAO: ${e}`);
         }
