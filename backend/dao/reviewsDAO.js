@@ -33,7 +33,9 @@ export default class ReviewsDAO {
     }
 
     static async updateReview(reviewId, userId, text, date){
-        try{}catch(e){
+        try{
+            const updateResponse = reviews.updateOne()
+        }catch(e){
             console.error(`Unable to udate review ${e}`);
             return { error: e }
         }
