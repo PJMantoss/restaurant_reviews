@@ -5,7 +5,7 @@ const ObjectId = mongodb.ObjectID;
 let restaurants;
 
 export default class RestaurantsDAO {
-    //Method is called as soon as the server starts. This initially connects our app to the DB
+    //Method is called as soon as the server starts. This initially connects our app to the mongoDB
     static async injectDB(conn){
         if(restaurants){
             return
