@@ -16,7 +16,15 @@ export default class ReviewsDAO {
     }
 
     static async addReview(retsuarantId, user, review, date){
-        try{}catch(e){
+        try{
+            const reviewDoc = {
+                user: user.name,
+                user_id: user._id,
+                text: user.review,
+                date: new Date(),
+                restaurantId: ObjectId(restaurantId)
+            }
+        }catch(e){
             console.error(`Unable to post review ${e}`);
             return { error: e }
         }
