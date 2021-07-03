@@ -24,6 +24,8 @@ export default class ReviewsDAO {
                 date: date,
                 restaurantId: ObjectId(restaurantId)
             }
+
+            return await reviews.insertOne(reviewDoc);
         }catch(e){
             console.error(`Unable to post review ${e}`);
             return { error: e }
