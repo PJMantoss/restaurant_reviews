@@ -47,5 +47,7 @@ export default class ReviewsDAO {
         }
     }
 
-    static async deleteReview(){}
+    static async deleteReview(reviewId, userId){
+        try{}catch(e){}
+    }
 }
