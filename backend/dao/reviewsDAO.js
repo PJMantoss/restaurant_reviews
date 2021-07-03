@@ -18,10 +18,10 @@ export default class ReviewsDAO {
     static async addReview(retsuarantId, user, review, date){
         try{
             const reviewDoc = {
-                user: user.name,
+                name: user.name,
                 user_id: user._id,
-                text: user.review,
-                date: new Date(),
+                text: review,
+                date: date,
                 restaurantId: ObjectId(restaurantId)
             }
         }catch(e){
