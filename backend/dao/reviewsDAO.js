@@ -42,12 +42,22 @@ export default class ReviewsDAO {
             return updateResponse;
 
         }catch(e){
-            console.error(`Unable to udate review ${e}`);
+            console.error(`Unable to update review ${e}`);
             return { error: e }
         }
     }
 
     static async deleteReview(reviewId, userId){
-        try{}catch(e){}
+        try{
+            const deleteResponse = await reviews.deleteOne(
+                {
+                    _id: ObjectId(reviewId),
+                    user_id: userId
+                }
+            )
+        }catch(e){
+            console.error(`Unable to delete review ${e}`);
+            return { error: e }
+        }
     }
 }
