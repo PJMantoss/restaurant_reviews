@@ -15,7 +15,12 @@ export default class ReviewsDAO {
         }
     }
 
-    static async addReview(){}
+    static async addReview(retsuarantId, user, review, date){
+        try{}catch(e){
+            console.error(`Unable to post review ${e}`);
+            return { error: e }
+        }
+    }
 
     static async updateReview(){}
 
