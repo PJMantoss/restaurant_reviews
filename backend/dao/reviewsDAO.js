@@ -8,5 +8,6 @@ export default class ReviewsDAO {
         if(reviews){
             return
         }
+        try{}catch(e){}
     }
 }
