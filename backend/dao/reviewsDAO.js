@@ -32,7 +32,12 @@ export default class ReviewsDAO {
         }
     }
 
-    static async updateReview(){}
+    static async updateReview(reviewId, userId, text, date){
+        try{}catch(e){
+            console.error(`Unable to udate review ${e}`);
+            return { error: e }
+        }
+    }
 
     static async deleteReview(){}
 }
