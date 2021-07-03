@@ -14,4 +14,10 @@ export default class ReviewsDAO {
             console.error(`Unable to establish collection handles in userDAO: ${e}`)
         }
     }
+
+    static async addReview(){}
+
+    static async updateReview(){}
+
+    static async deleteReview(){}
 }
