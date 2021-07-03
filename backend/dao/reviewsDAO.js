@@ -39,6 +39,8 @@ export default class ReviewsDAO {
                 { $set: { text: text, date: date } }
             );
 
+            return updateResponse;
+
         }catch(e){
             console.error(`Unable to udate review ${e}`);
             return { error: e }
