@@ -35,8 +35,8 @@ export default class ReviewsDAO {
     static async updateReview(reviewId, userId, text, date){
         try{
             const updateResponse = reviews.updateOne(
-                {user_id: userId, id: ObjectId(reviewId)},
-                {}
+                { user_id: userId, id: ObjectId(reviewId) },
+                { $set: { text: text, date: date } }
             );
 
         }catch(e){
