@@ -8,6 +8,8 @@ export default class ReviewsDAO {
         if(reviews){
             return
         }
-        try{}catch(e){}
+        try{
+            reviews = await conn.connect(process.env.RESTREVIEWS_NS).collection("reviews")
+        }catch(e){}
     }
 }
