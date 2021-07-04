@@ -9,7 +9,7 @@ router.route("/").get(RestaurantsController.apiGetRestaurants);
 router
     .route("/review")
     .post(ReviewsController.apiPostReview)
-    .update(ReviewsController.apiUpdateReview)
+    .put(ReviewsController.apiUpdateReview)
     .delete(ReviewsController.apiDeleteReview)
 
 export default router;
