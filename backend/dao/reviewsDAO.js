@@ -15,7 +15,7 @@ export default class ReviewsDAO {
         }
     }
 
-    static async addReview(retsuarantId, user, review, date){
+    static async addReview(restaurantId, user, review, date){
         try{
             const reviewDoc = {
                 name: user.name,
