@@ -7,7 +7,8 @@ dotenv.config();
 const MongoClient = mongodb.MongoClient;
 
 const port = process.env.PORT || 8000;
-//console.log(process.env.RESTREVIEWS_DB_URI);
+
+console.log(process.env.RESTREVIEWS_DB_URI);
 
 MongoClient.connect(
     process.env.RESTREVIEWS_DB_URI,
