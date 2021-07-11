@@ -14,7 +14,7 @@ MongoClient.connect(
     process.env.RESTREVIEWS_DB_URI,
     {
         poolSize: 50,
-        wwriteConcern: 2500,
+        wtimeout: 2500,
         useNewUrlParse: true
     }
 )
