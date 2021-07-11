@@ -5,7 +5,7 @@ import RestaurantsDAO from './dao/restaurantsDAO.js';
 dotenv.config();
 
 const MongoClient = mongodb.MongoClient;
-console.log(process.env.RESTREVIEWS_DB_URI)
+
 const port = process.env.PORT || 8000;
 
 MongoClient.connect(
