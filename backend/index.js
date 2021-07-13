@@ -9,7 +9,11 @@ const MongoClient = mongodb.MongoClient;
 const port = process.env.PORT || 8000;
 
 //console.log(process.env.RESTREVIEWS_DB_URI);
-
+// let client = new MongoClient(process.env.RESTREVIEWS_DB_URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
+  
 MongoClient.connect(
     process.env.RESTREVIEWS_DB_URI,
     {
@@ -20,7 +24,6 @@ MongoClient.connect(
 )
 .catch(err => {
     console.error(err.stack);
-    process.exit(1);
 })
 .then(async client => {
     //Initial reference to the 'restaurants collection' in the database
