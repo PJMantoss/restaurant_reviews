@@ -9,11 +9,7 @@ const MongoClient = mongodb.MongoClient;
 const port = process.env.PORT || 8000;
 
 //console.log(process.env.RESTREVIEWS_DB_URI);
-let client = new MongoClient(process.env.RESTREVIEWS_DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  
+
 MongoClient.connect(
     process.env.RESTREVIEWS_DB_URI,
     {
