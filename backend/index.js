@@ -20,6 +20,7 @@ MongoClient.connect(
 )
 .catch(err => {
     console.error(err.stack);
+    process.exit(1);
 })
 .then(async client => {
     //Initial reference to the 'restaurants collection' in the database
