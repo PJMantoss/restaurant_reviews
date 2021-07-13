@@ -6,11 +6,11 @@ let restaurants;
 
 export default class RestaurantsDAO {
     //Method is called as soon as the server starts. This initially connects our app to the mongoDB
-    static async injectDB(db){
+    static async injectDB(conn){
         if(restaurants){
             return
         }try{
-            restaurants = await db(process.env.RESTREVIEWS_NS).collection("restaurants");
+            restaurants = await conn.db(process.env.RESTREVIEWS_NS).collection("restaurants");
         } catch(e){
             console.error(`Unable to establish a collection handle in restaurantsDAO: ${e}`);
         }
