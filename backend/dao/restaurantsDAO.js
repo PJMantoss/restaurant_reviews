@@ -102,4 +102,6 @@ export default class RestaurantsDAO {
             throw e;
         }
     }
+
+    static async getCuisines(){};
 }
