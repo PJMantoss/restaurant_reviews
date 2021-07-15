@@ -109,7 +109,7 @@ export default class RestaurantsDAO {
             cuisines = await restaurants.distinct("cuisine");
             return cuisines;
         }catch(e){
-            console.error();
+            console.error(`Unable to get Cuisines, ${e}`);
             return cuisines;
         }
     };
