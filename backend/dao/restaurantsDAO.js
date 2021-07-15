@@ -103,5 +103,8 @@ export default class RestaurantsDAO {
         }
     }
 
-    static async getCuisines(){};
+    static async getCuisines(){
+        let cuisines = []
+        
+    };
 }
