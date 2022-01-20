@@ -15,7 +15,6 @@ MongoClient.connect(
     {
         poolSize: 50,
         wtimeout: 2500,
-        useNewUrlParse: true,
         useUnifiedTopology: true,
         w: "majority",
         family: 4
