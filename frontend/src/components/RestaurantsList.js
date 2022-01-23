@@ -58,6 +58,33 @@ const RestaurantsList = props => {
         retrieveRestaurants();
       };
 
+      const find = (query, by) => {
+        RestaurantDataService.find(query, by)
+          .then(response => {
+            console.log(response.data);
+            setRestaurants(response.data.restaurants);
+          })
+          .catch(e => {
+            console.log(e);
+          });
+      };
+    
+      const findByName = () => {
+        find(searchName, "name")
+      };
+    
+      const findByZip = () => {
+        find(searchZip, "zipcode")
+      };
+    
+      const findByCuisine = () => {
+        if (searchCuisine == "All Cuisines") {
+          refreshList();
+        } else {
+          find(searchCuisine, "cuisine")
+        }
+      };
+
   return (
     <div className="App">
       Hello Universe!
