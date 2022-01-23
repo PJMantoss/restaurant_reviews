@@ -87,7 +87,7 @@ const RestaurantsList = props => {
 
   return (
     <div className="App">
-      Hello Universe!
+      
     </div>
   );
 }
