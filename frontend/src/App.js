@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import AddReview from "./components/AddReview";
 import Restaurants from "./components/Restaurants";
-import RestaurantsList from "./components/RestaurantsList ";
+import RestaurantsList from "./components/RestaurantsList";
 import Login from "./components/login";
 
 function App() {
