@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AddReview from "./components/AddReview";
 import Restaurants from "./components/Restaurants";
 import RestaurantsList from "./components/RestaurantsList";
-import Login from "./components/login";
+import Login from "./components/Login";
 
 function App() {
   return (
