@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import AddReview from "./components/AddReview";
-import Restaurants from "./components/Restaurants";
+import Restaurant from "./components/Restaurants";
 import RestaurantsList from "./components/RestaurantsList";
 import Login from "./components/Login";
 
@@ -57,7 +57,7 @@ function App() {
           <Route 
             path="/restaurants/:id"
             render={(props) => (
-              <Restaurants {...props} user={user} />
+              <Restaurant {...props} user={user} />
             )}
           />
           <Route 
