@@ -17,7 +17,7 @@ function App() {
   async function logout() {
     setUser(null)
   }
-  
+
   return (
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
@@ -57,7 +57,7 @@ function App() {
           <Route 
             path="/restaurants/:id"
             render={(props) => (
-              <Restaurant {...props} user={user} />
+              <Restaurants {...props} user={user} />
             )}
           />
           <Route 
