@@ -8,6 +8,16 @@ import RestaurantsList from "./components/RestaurantsList";
 import Login from "./components/Login";
 
 function App() {
+  const [user, setUser] = React.useState(null);
+
+  async function login(user = null) {
+    setUser(user);
+  }
+
+  async function logout() {
+    setUser(null)
+  }
+  
   return (
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
