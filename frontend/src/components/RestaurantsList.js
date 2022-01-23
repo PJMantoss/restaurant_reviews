@@ -2,7 +2,7 @@ import React from "react";
 
 function RestaurantsList() {
   return (
-    <div className="RestaurantsList">
+    <div className="App">
       Hello Universe!
     </div>
   );
