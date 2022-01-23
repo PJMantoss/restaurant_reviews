@@ -30,6 +30,34 @@ const RestaurantsList = props => {
         
       };
 
+      const retrieveRestaurants = () => {
+        RestaurantDataService.getAll()
+          .then(response => {
+            console.log(response.data);
+            setRestaurants(response.data.restaurants);
+            
+          })
+          .catch(e => {
+            console.log(e);
+          });
+      };
+    
+      const retrieveCuisines = () => {
+        RestaurantDataService.getCuisines()
+          .then(response => {
+            console.log(response.data);
+            setCuisines(["All Cuisines"].concat(response.data));
+            
+          })
+          .catch(e => {
+            console.log(e);
+          });
+      };
+    
+      const refreshList = () => {
+        retrieveRestaurants();
+      };
+
   return (
     <div className="App">
       Hello Universe!
