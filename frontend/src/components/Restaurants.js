@@ -1,6 +1,6 @@
 import React from "react";
 
-function Restaurant() {
+const Restaurant = props => {
   return (
     <div className="App">
       Hello Universe!
