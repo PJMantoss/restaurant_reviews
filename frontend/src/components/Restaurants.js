@@ -45,7 +45,7 @@ const Restaurant = props => {
 
   return (
     <div>
-      Hello Universe!
+      
     </div>
   );
 }
