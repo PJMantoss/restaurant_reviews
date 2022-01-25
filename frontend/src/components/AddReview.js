@@ -11,6 +11,9 @@ const AddReview = props => {
     initialReviewState = props.location.state.currentReview.text
   }
 
+  const [review, setReview] = useState(initialReviewState);
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <div className="App">
       Hello Universe!
