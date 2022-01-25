@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RestaurantDataService from "../services/restaurant";
 
-function AddReview() {
+const AddReview = props => {
   return (
     <div className="App">
       Hello Universe!
