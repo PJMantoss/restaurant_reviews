@@ -32,7 +32,20 @@ const Login = props => {
               onChange={handleInputChange}
               name="name"
             />
-          </div>
+         </div>
+
+         <div className="form-group">
+          <label htmlFor="id">ID</label>
+          <input
+            type="text"
+            className="form-control"
+            id="id"
+            required
+            value={user.id}
+            onChange={handleInputChange}
+            name="id"
+          />
+        </div>
       </div>
     </div>
   );
