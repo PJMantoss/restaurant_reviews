@@ -13,6 +13,10 @@ const Login = props => {
     setUser({ ...user, [name]: value });
   };
 
+  const login = () => {
+    
+  }
+
   return (
     <div className="App">
       Hello Universe!
