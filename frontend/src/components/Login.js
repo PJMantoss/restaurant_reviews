@@ -9,7 +9,8 @@ const Login = props => {
   const [user, setUser] = useState(initialUserState);
 
   const handleInputChange = event => {
-    
+    const { name, value } = event.target;
+    setUser({ ...user, [name]: value });
   };
 
   return (
