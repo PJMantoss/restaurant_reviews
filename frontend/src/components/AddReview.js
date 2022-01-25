@@ -18,6 +18,14 @@ const AddReview = props => {
     setReview(event.target.value);
   };
 
+  const saveReview = () => {
+    var data = {
+      text: review,
+      name: props.user.name,
+      user_id: props.user.id,
+      restaurant_id: props.match.params.id
+    };
+
   return (
     <div className="App">
       Hello Universe!
