@@ -5,7 +5,9 @@ const Login = props => {
     name: "",
     id: "",
   };
-  
+
+  const [user, setUser] = useState(initialUserState);
+
   return (
     <div className="App">
       Hello Universe!
