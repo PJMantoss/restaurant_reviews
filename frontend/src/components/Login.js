@@ -46,6 +46,10 @@ const Login = props => {
             name="id"
           />
         </div>
+
+        <button onClick={login} className="btn btn-success">
+          Login
+        </button>
       </div>
     </div>
   );
