@@ -8,6 +8,10 @@ const Login = props => {
 
   const [user, setUser] = useState(initialUserState);
 
+  const handleInputChange = event => {
+    
+  };
+
   return (
     <div className="App">
       Hello Universe!
