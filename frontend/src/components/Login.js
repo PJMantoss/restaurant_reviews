@@ -19,7 +19,7 @@ const Login = props => {
   }
 
   return (
-    <div className="App">
+    <div className="submit-form">
       Hello Universe!
     </div>
   );
