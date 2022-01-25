@@ -6,6 +6,11 @@ const AddReview = props => {
 
   let editing = false;
 
+  if (props.location.state && props.location.state.currentReview) {
+    editing = true;
+    initialReviewState = props.location.state.currentReview.text
+  }
+
   return (
     <div className="App">
       Hello Universe!
