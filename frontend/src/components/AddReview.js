@@ -50,7 +50,7 @@ const AddReview = props => {
   };
 
   return (
-    <div className="App">
+    <div>
       Hello Universe!
     </div>
   );
