@@ -14,6 +14,10 @@ const AddReview = props => {
   const [review, setReview] = useState(initialReviewState);
   const [submitted, setSubmitted] = useState(false);
 
+  const handleInputChange = event => {
+    setReview(event.target.value);
+  };
+
   return (
     <div className="App">
       Hello Universe!
