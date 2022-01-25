@@ -20,7 +20,20 @@ const Login = props => {
 
   return (
     <div className="submit-form">
-      <div></div>
+      <div>
+        <div className="form-group">
+            <label htmlFor="user">Username</label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              required
+              value={user.name}
+              onChange={handleInputChange}
+              name="name"
+            />
+          </div>
+      </div>
     </div>
   );
 }
