@@ -26,6 +26,29 @@ const AddReview = props => {
       restaurant_id: props.match.params.id
     };
 
+    if (editing) {
+      data.review_id = props.location.state.currentReview._id
+      RestaurantDataService.updateReview(data)
+        .then(response => {
+          setSubmitted(true);
+          console.log(response.data);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    } else {
+      RestaurantDataService.createReview(data)
+        .then(response => {
+          setSubmitted(true);
+          console.log(response.data);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
+
+  };
+
   return (
     <div className="App">
       Hello Universe!
