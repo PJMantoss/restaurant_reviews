@@ -51,7 +51,7 @@ const AddReview = props => {
 
   return (
     <div>
-      Hello Universe!
+      
     </div>
   );
 }
